@@ -54,7 +54,7 @@ class ServiceController extends BaseController
     {
         $data = $request->validated();
 
-        $service = $service->update($data);
+        $service->update($data);
 
         return new ServicesResource($service);
     }

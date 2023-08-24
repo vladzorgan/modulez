@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\Services\Requests;
+namespace App\Modules\Portfolio\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ServiceStoreRequest extends FormRequest
+class PortfolioWorkUpdateRequest extends FormRequest
 {
     /**
      * {@inheritdoc}
@@ -15,7 +15,6 @@ class ServiceStoreRequest extends FormRequest
             'title' => ['string', 'max:255'],
             'slug' => ['string', 'max:255'],
             'description' => ['string', 'max:255'],
-            'icon_link' => ['string', 'max:255'],
             'image_link' => ['string', 'max:255'],
         ];
     }
